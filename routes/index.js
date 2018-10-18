@@ -1,9 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const clientController = require('../controllers/clientController')
+const userController = require('../controllers/userController')
 
-/* GET home page. */
+/* GET */
 
-router.get('/', clientController.getClients)
+router.get('/clients/id/:id', userController.getClientsById)
+router.get('/clients/name/:name', userController.getClientsByName)
 
 module.exports = router
