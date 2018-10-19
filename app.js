@@ -24,8 +24,12 @@ app.use('/', indexRouter)
 app.use(function (req, res, next) {
   next(createError(404))
 })
+app.use(function (req, res, next) {
+  next(createError(403))
+})
 
 // error handler
+
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message
