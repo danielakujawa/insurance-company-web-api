@@ -29,7 +29,7 @@ exports.getClientByName = (req, res) => {
     })
 }
 
-exports.getPoliciesByName = async (req, res) => {
+exports.getPoliciesByName = (req, res) => {
   get(urlClients)
     .then(response => {
       const clients = response.data.clients
@@ -52,7 +52,7 @@ exports.getPoliciesByName = async (req, res) => {
     })
 }
 
-exports.getUserByPolicyNumber = async (req, res) => {
+exports.getUserByPolicyNumber = (req, res) => {
   get(urlClients)
     .then(response => {
       const clients = response.data.clients
