@@ -33,7 +33,7 @@ curl -X GET  -H 'Authorization: a0ece5db-cd14-4f21-812f-966633e7be86'  http://lo
 
 curl -X GET -H 'Authorization: e8fd159b-57c4-4d36-9bd7-a59ca13057bb' http://localhost:3000/clients/policy/56b415d6-53ee-4481-994f-4bffa47b5239 | json_pp
 
-3. Click here to import and run the postman collection
+3. Click here run the postman collection
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/4cfcb433150a1178c04e)
 
